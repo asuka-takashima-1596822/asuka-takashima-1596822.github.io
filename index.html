@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <title>出勤表</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <style>
+    h2 {
+        color: lightseagreen
+    }
+    p {
+        color: black;
+    }
+    h4 {
+        color: black;
+    }
+    select{
+        font-size: medium;
+        font-weight: bold;
+        
+    }
+  </style>
+</head>
+
+<body>
+<h2 style="text-align:center"><hr>&#8986;出勤表&#8986;</h2>
+<table border="5" width = "80%" align="center" >
+    <!-- 表全体の長さを最初に指定しておく -->
+    <tr>
+        <th bgcolor="lightseagreen" width = "10%">名前</th>
+        <th bgcolor="lightseagreen" width = "10%">勤務</th>
+        <th bgcolor="lightseagreen" width = "20%">帰宅予定時間</th>
+        <th bgcolor="lightseagreen" width = "70%">連絡事項</th>
+    </tr>
+    <tr>
+        <th>高島</th> 
+
+        <th>
+            <select id="workSpace-1">
+                <option>未選択</option>
+            </select>
+        </th> 
+
+        <th>
+            <select id="workCode-1" disabled ></select><h4 id = resultSelect-1 ></h4>
+            
+        </th>
+
+        <th contenteditable= "true" >
+        </th>
+
+    </tr>
+
+    <tr>
+        <th>佐藤</th> 
+
+        <th>
+            <select id="workSpace-2">
+                <option>未選択</option>
+            </select>
+        </th> 
+
+        <th>
+            <select id="workCode-2" disabled ></select><h4 id = resultSelect-2 ></h4>
+            
+        </th>
+
+        <th contenteditable= "true">
+        </th>
+
+    </tr>
+
+    <tr>
+        <th>田中</th> 
+
+        <th>
+            <select id="workSpace-3">
+                <option>未選択</option>
+            </select>
+        </th> 
+
+        <th>
+            <select id="workCode-3" disabled ></select><h4 id = resultSelect-3 ></h4>
+            
+        </th>
+
+        <th contenteditable= "true">
+        </th>
+
+    </tr>
+
+    <tr>
+        <th>中村</th> 
+
+        <th>
+            <select id="workSpace-4">
+                <option>未選択</option>
+            </select>
+        </th> 
+
+        <th>
+            <select id="workCode-4" disabled ></select><h4 id = resultSelect-4 ></h4>
+            
+        </th>
+
+        <th contenteditable= "true">
+        </th>
+
+    </tr>
+    
+    <tr>
+        <th>飯田</th> 
+
+        <th>
+            <select id="workSpace-5">
+                <option>未選択</option>
+            </select>
+        </th> 
+
+        <th>
+            <select id="workCode-5" disabled ></select><h4 id = resultSelect-5 ></h4>
+            
+        </th>
+
+        <th contenteditable= "true">
+        </th>
+
+        <tr>
+            <th>井上</th> 
+    
+            <th>
+                <select id="workSpace-6">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-6" disabled ></select><h4 id = resultSelect-6 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+    
+        </tr>
+
+        <tr>
+            <th>寺田</th> 
+    
+            <th>
+                <select id="workSpace-7">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-7" disabled ></select><h4 id = resultSelect-7 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+    
+        </tr>
+
+        <tr>
+            <th>相田</th> 
+    
+            <th>
+                <select id="workSpace-8">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-8" disabled ></select><h4 id = resultSelect-8 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+        </tr>
+        
+        <tr>
+            <th>鈴木</th> 
+    
+            <th>
+                <select id="workSpace-9">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-9" disabled ></select><h4 id = resultSelect-9 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+        </tr>
+        
+        <tr>
+            <th>後藤</th> 
+    
+            <th>
+                <select id="workSpace-10">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-10" disabled ></select><h4 id = resultSelect-10 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+        </tr>
+
+        <tr>
+            <th>石下</th> 
+    
+            <th>
+                <select id="workSpace-11">
+                    <option>未選択</option>
+                </select>
+            </th> 
+    
+            <th>
+                <select id="workCode-11" disabled ></select><h4 id = resultSelect-11 ></h4>
+                
+            </th>
+    
+            <th contenteditable= "true">
+            </th>
+        </tr>
+        
+        
+        
+        
+
+    </tr>
+    
+</table>
+
+<p></p>
+<hr>
+<script type="text/javascript" src="java copy.js"></script>
+</body>
+
+</html>
