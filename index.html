@@ -19,18 +19,27 @@
     select{
         font-size: medium;
         font-weight: bold;
-        
     }
+    body{
+        background-color: seashell;
+    }
+    button{
+        background-color: peachpuff;
+        padding: 5px 10px;
+    }
+
   </style>
 </head>
 
 <body>
 <h2 style="text-align:center"><hr>&#8986;出勤表&#8986;</h2>
+<div align = "center" ><button id="save" >SAVE</button>　　　　　<button id = "load">LOAD</button> </div>
+<hr>
 <table border="5" width = "80%" align="center" >
     <!-- 表全体の長さを最初に指定しておく -->
     <tr>
         <th bgcolor="lightseagreen" width = "10%">名前</th>
-        <th bgcolor="lightseagreen" width = "10%">勤務</th>
+        <th bgcolor="lightseagreen" width = "10%">勤務先</th>
         <th bgcolor="lightseagreen" width = "20%">帰宅予定時間</th>
         <th bgcolor="lightseagreen" width = "70%">連絡事項</th>
     </tr>
@@ -44,11 +53,11 @@
         </th> 
 
         <th>
-            <select id="workCode-1" disabled ></select><h4 id = resultSelect-1 ></h4>
+            <select id="workTime-1" disabled ></select><h4 id = text-1 ></h4>
             
         </th>
 
-        <th contenteditable= "true" >
+        <th contenteditable= "true" id = "comment-1" >
         </th>
 
     </tr>
@@ -63,11 +72,11 @@
         </th> 
 
         <th>
-            <select id="workCode-2" disabled ></select><h4 id = resultSelect-2 ></h4>
+            <select id="workTime-2" disabled ></select><h4 id = text-2 ></h4>
             
         </th>
 
-        <th contenteditable= "true">
+        <th contenteditable= "true" id = "comment-2">
         </th>
 
     </tr>
@@ -82,11 +91,11 @@
         </th> 
 
         <th>
-            <select id="workCode-3" disabled ></select><h4 id = resultSelect-3 ></h4>
+            <select id="workTime-3" disabled ></select><h4 id = text-3 ></h4>
             
         </th>
 
-        <th contenteditable= "true">
+        <th contenteditable= "true" id = "comment-3">
         </th>
 
     </tr>
@@ -101,11 +110,11 @@
         </th> 
 
         <th>
-            <select id="workCode-4" disabled ></select><h4 id = resultSelect-4 ></h4>
+            <select id="workTime-4" disabled ></select><h4 id = text-4 ></h4>
             
         </th>
 
-        <th contenteditable= "true">
+        <th contenteditable= "true" id = "comment-4">
         </th>
 
     </tr>
@@ -120,11 +129,11 @@
         </th> 
 
         <th>
-            <select id="workCode-5" disabled ></select><h4 id = resultSelect-5 ></h4>
+            <select id="workTime-5" disabled ></select><h4 id = text-5 ></h4>
             
         </th>
 
-        <th contenteditable= "true">
+        <th contenteditable= "true" id = "comment-5">
         </th>
 
         <tr>
@@ -137,11 +146,11 @@
             </th> 
     
             <th>
-                <select id="workCode-6" disabled ></select><h4 id = resultSelect-6 ></h4>
+                <select id="workTime-6" disabled ></select><h4 id = text-6 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-6">
             </th>
     
         </tr>
@@ -156,11 +165,11 @@
             </th> 
     
             <th>
-                <select id="workCode-7" disabled ></select><h4 id = resultSelect-7 ></h4>
+                <select id="workTime-7" disabled ></select><h4 id = text-7 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-7">
             </th>
     
         </tr>
@@ -175,11 +184,11 @@
             </th> 
     
             <th>
-                <select id="workCode-8" disabled ></select><h4 id = resultSelect-8 ></h4>
+                <select id="workTime-8" disabled ></select><h4 id = text-8 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-8">
             </th>
         </tr>
         
@@ -193,11 +202,11 @@
             </th> 
     
             <th>
-                <select id="workCode-9" disabled ></select><h4 id = resultSelect-9 ></h4>
+                <select id="workTime-9" disabled ></select><h4 id = text-9 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-9">
             </th>
         </tr>
         
@@ -211,11 +220,11 @@
             </th> 
     
             <th>
-                <select id="workCode-10" disabled ></select><h4 id = resultSelect-10 ></h4>
+                <select id="workTime-10" disabled ></select><h4 id = text-10 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-10">
             </th>
         </tr>
 
@@ -229,11 +238,11 @@
             </th> 
     
             <th>
-                <select id="workCode-11" disabled ></select><h4 id = resultSelect-11 ></h4>
+                <select id="workTime-11" disabled ></select><h4 id = text-11 ></h4>
                 
             </th>
     
-            <th contenteditable= "true">
+            <th contenteditable= "true" id = "comment-11">
             </th>
         </tr>
         
