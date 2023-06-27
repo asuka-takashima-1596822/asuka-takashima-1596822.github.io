@@ -1,4 +1,3 @@
-
 //登録IDを配列にする
 const id = ["1","2","3","4","5","6","7","8","9","10","11"];
 
@@ -6,7 +5,6 @@ const id = ["1","2","3","4","5","6","7","8","9","10","11"];
 //大分類
 const workSpaces =[
     "在宅",
-    "ハウス",
     "現場",
     "出張",
     "教育",
@@ -20,6 +18,8 @@ const workTime =[
     "8:00","8:30","9:00","9:30","10:00","10:30","11:00","11:30","12:00","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30","18:00","18:00","18:30","19:00","19:30","20:00","20:30","21:00","21:30","22:00","深夜勤務あり"
 ]
 
+const save = document.getElementById("save");
+const load = document.getElementById("load");
 
 //関数を定義(引数をid配列の番号とする)
 function setSelect (num){
@@ -29,8 +29,6 @@ const getWorkSpace = document.getElementById("workSpace-" + id[num]);
 const getWorkTime = document.getElementById("workTime-" + id[num]);
 const getText = document.getElementById("text-" + id[num]);
 const getComment = document.getElementById("comment-" + id[num]);
-const save = document.getElementById("save");
-const load = document.getElementById("load");
 
 //大分類のプルダウンを作成
 workSpaces.forEach(category => {
@@ -128,4 +126,3 @@ function intoNum (){
   }
 }
 intoNum();
-
