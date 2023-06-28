@@ -72,7 +72,7 @@ getWorkSpace.addEventListener('change', () => {//"input":ユーザーの操作�
 
   }else if (getWorkSpace.value === "年休"){
     getWorkTime.disabled = true
-    getText.style.backgroundColor = "#ffe4e1"
+    getText.style.backgroundColor = "#f08080"
     getText.textContent = "年休🌈"
 
   }else {
@@ -103,7 +103,7 @@ function loadAction(){
     getText.style.backgroundColor = "#dcdcdc"
   }if (getWorkSpace.value === "年休"){
     getText.textContent = localStorage.getItem("text-" + id[num]);//年休の場合、背景色も変更
-    getText.style.backgroundColor = "#ffe4e1";
+    getText.style.backgroundColor = "#f08080";
   }else if (getWorkSpace.value === "帰宅"){
     getText.textContent = localStorage.getItem("text-" + id[num]);//帰宅の場合。背景色も変更
     getText.style.backgroundColor = "#87cefa"
