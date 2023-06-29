@@ -1,4 +1,3 @@
-
 //登録IDを配列にする
 const id = ["1","2","3","4","5","6","7","8","9","10","11"];
 
@@ -19,10 +18,13 @@ const workTime =[
     "8:00","8:30","9:00","9:30","10:00","10:30","11:00","11:30","12:00","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30","18:00","18:00","18:30","19:00","19:30","20:00","20:30","21:00","21:30","22:00","深夜勤務あり"
 ]
 
+//セーブボタンとロードボタンのオブジェクト変数を定義
 const save = document.getElementById("save");
 const load = document.getElementById("load");
 
-//関数を定義(引数をid配列の番号とする)
+
+
+//関数を定義(引数をid配列の番号とする)※全てのidに対してそれぞれ下記関数を実行してほしいため
 function setSelect (num){
 
 //各オブジェクト変数を定義
@@ -31,24 +33,23 @@ const getWorkTime = document.getElementById("workTime-" + id[num]);
 const getText = document.getElementById("text-" + id[num]);
 const getComment = document.getElementById("comment-" + id[num]);
 
-//大分類のプルダウンを作成
+//大分類のプルダウンを作成 ★for.Eachdeで配列の各要素に対して1度ずつ実行
 workSpaces.forEach(category => {
     const option = document.createElement('option');    //新しくオプションを作成する
     option.textContent = category; //optionの内容をカテゴリーにする
-    getWorkSpace.appendChild(option);  //id = workSpace　に optionを追加する
+    return getWorkSpace.appendChild(option);  //id = workSpace　に optionを追加する
   });  
 
-// 大分類が選択されたら小分類のプルダウンを生成
-getWorkSpace.addEventListener('change', () => {//"input":ユーザーの操作によって値が変更されたときに発生するイベント
+//大分類が変更"change"されたら小分類のプルダウンを生成
+getWorkSpace.addEventListener('change', () => {  
 
-    //小分類のテキストをリセット
-  getText.innerHTML = "";
+//小分類のテキスト(年休と帰宅の時に出したテキスト、セーブした際のテキスト）をリセット
+  getText.textContent = "";
 
-    // 小分類のプルダウンをリセット
+// 小分類のプルダウンをリセット
   const options = document.querySelectorAll("#workTime-" + id[num] + "> option");//<option>要素の内、idが"workCode-id[mum]"のもののノードリストを取得　
-  options.forEach(option => {
-    option.remove(); //ノードに含まれるテキストを削除
-  });
+  options.forEach(option => option.remove()); //ノードに含まれるテキストを削除
+  
 
   // 小分類のプルダウンに最初に「選択してください」を加える
   const firstSelect = document.createElement('option');
@@ -94,6 +95,7 @@ function saveAction(){
   localStorage.setItem("comment-" + id[num],getComment.textContent);
 };
 
+
 //記載内容をローカルストレージから取り出す関数
 function loadAction(){
   getWorkSpace.value = localStorage.getItem("workSpace-"+ id[num]);//勤務先に格納
@@ -104,7 +106,7 @@ function loadAction(){
     getText.style.backgroundColor = "#dcdcdc"
   }if (getWorkSpace.value === "年休"){
     getText.textContent = localStorage.getItem("text-" + id[num]);//年休の場合、背景色も変更
-    getText.style.backgroundColor = "#f08080"
+    getText.style.backgroundColor = "#f08080";
   }else if (getWorkSpace.value === "帰宅"){
     getText.textContent = localStorage.getItem("text-" + id[num]);//帰宅の場合。背景色も変更
     getText.style.backgroundColor = "#87cefa"
@@ -115,8 +117,8 @@ function loadAction(){
 save.addEventListener("click",saveAction);
 
 load.addEventListener("click",loadAction);
-};
 
+};
 
 
 
@@ -127,3 +129,5 @@ function intoNum (){
   }
 }
 intoNum();
+
+
