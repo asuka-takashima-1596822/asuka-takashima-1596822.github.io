@@ -33,7 +33,7 @@ const getWorkTime = document.getElementById("workTime-" + id[num]);
 const getText = document.getElementById("text-" + id[num]);
 const getComment = document.getElementById("comment-" + id[num]);
 
-//大分類のプルダウンを作成 ★for.Eachdeで配列の各要素に対して1度ずつ実行
+//大分類のプルダウンを作成 ★for.Eachで配列の各要素に対して1度ずつ実行
 workSpaces.forEach(category => {
     const option = document.createElement('option');    //新しくオプションを作成する
     option.textContent = category; //optionの内容をカテゴリーにする
