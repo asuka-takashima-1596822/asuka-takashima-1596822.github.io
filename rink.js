@@ -1,5 +1,6 @@
+
 //登録IDを配列にする
-const id = ["1","2","3","4","5","6","7","8","9","10","11"];
+const id = ["1","2","3","4","5","6","7","8","9","10"];
 
 
 //大分類
@@ -69,13 +70,13 @@ getWorkSpace.addEventListener('change', () => {
   // 大分類で選択されたカテゴリーによって表示を変える
   if(getWorkSpace.value === "帰宅"){
     getWorkTime.disabled = true
-    getText.textContent = "お疲れ様でした!🍺"
+    getText.textContent = "CLOCK OUT!!🍺"
     getText.style.backgroundColor = "#87cefa"
 
   }else if (getWorkSpace.value === "年休"){
     getWorkTime.disabled = true
     getText.style.backgroundColor = "#f08080"
-    getText.textContent = "年休🌈"
+    getText.textContent = "HOLIDAY🌈"
 
   }else {
     workTime.forEach(category => {
