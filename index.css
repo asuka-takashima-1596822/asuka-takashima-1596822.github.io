@@ -1,0 +1,67 @@
+
+table{
+    border-collapse: separate;
+    border-spacing: 10px; 
+    width: 80%;
+    margin: auto;
+
+  }
+
+.topTable{
+    color: black;
+    background-color: lightpink;
+    font-size: large;
+  }
+  
+
+.midTable:hover{
+    background-color:whitesmoke;
+  }
+  
+
+.midTable{
+    text-align: center;
+    padding: 10% 5%;
+    background-color:papayawhip;
+    height: auto;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+
+.topText{
+    color: salmon;
+    background-color: cornsilk;
+    text-align: center;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+p {
+    color: black;
+}
+
+h4 {
+    color: black;
+}
+
+select{
+    font-size: large;
+    font-weight: bolder;
+    padding: 5px 5px;
+}
+
+button{
+    background-color: peachpuff;
+    padding: 5px 10px;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+button:active{
+  background-color: whitesmoke;
+}
+
+body{
+  background-image: url(backimge.jpg);
+}
