@@ -6,44 +6,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <style>
-    h2 {
-        color: lightseagreen
-    }
-    p {
-        color: black;
-    }
-    h4 {
-        color: black;
-    }
-    select{
-        font-size: medium;
-        font-weight: bold;
-    }
-    body{
-        background-color: seashell;
-    }
-    button{
-        background-color: peachpuff;
-        padding: 5px 10px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-<h2 style="text-align:center"><hr>&#8986;出勤表&#8986;</h2>
+<h2 class="topText">Work 　Schedule</h2>
 <div align = "center" ><button id="save" >SAVE</button>　　　　　<button id = "load">LOAD</button> </div>
 <hr>
-<table border="5" width = "80%" align="center">
+<table>
     <!-- 表全体の長さを最初に指定しておく -->
-    <tr>
-        <th bgcolor="lightseagreen" width = "10%">名前</th>
-        <th bgcolor="lightseagreen" width = "10%">勤務先</th>
-        <th bgcolor="lightseagreen" width = "20%">帰宅予定時間</th>
-        <th bgcolor="lightseagreen" width = "70%">連絡事項</th>
+    <tr class="topTable">
+        <th  width = "10%">名前</th>
+        <th width = "10%">勤務先</th>
+        <th width = "20%">帰宅予定時間</th>
+        <th  width = "70%">連絡事項</th>
     </tr>
-    <tr>
+    <tr class="midTable">
         <th>リンク</th> 
 
         <th>
@@ -62,7 +40,7 @@
 
     </tr>
 
-    <tr>
+    <tr class="midTable">
         <th>クラウド</th> 
 
         <th>
@@ -81,7 +59,7 @@
 
     </tr>
 
-    <tr>
+    <tr class="midTable">
         <th>ザックス</th> 
 
         <th>
@@ -100,7 +78,7 @@
 
     </tr>
 
-    <tr>
+    <tr class="midTable">
         <th>トレバー</th> 
 
         <th>
@@ -119,7 +97,7 @@
 
     </tr>
     
-    <tr>
+    <tr class="midTable">
         <th>マイケル</th> 
 
         <th>
@@ -136,7 +114,7 @@
         <th contenteditable= "true" id = "comment-5">
         </th>
 
-        <tr>
+    <tr class="midTable">
             <th>桐生</th> 
     
             <th>
@@ -153,9 +131,9 @@
             <th contenteditable= "true" id = "comment-6">
             </th>
     
-        </tr>
+    </tr>
 
-        <tr>
+    <tr class="midTable">
             <th>真島</th> 
     
             <th>
@@ -172,9 +150,9 @@
             <th contenteditable= "true" id = "comment-7">
             </th>
     
-        </tr>
+    </tr>
 
-        <tr>
+    <tr class="midTable">
             <th>キトゥン</th> 
     
             <th>
@@ -190,9 +168,9 @@
     
             <th contenteditable= "true" id = "comment-8">
             </th>
-        </tr>
+    </tr>
         
-        <tr>
+    <tr class="midTable">
             <th>2B</th> 
     
             <th>
@@ -210,7 +188,7 @@
             </th>
         </tr>
         
-        <tr>
+    <tr class="midTable">
             <th>サトシ</th> 
     
             <th>
@@ -226,31 +204,8 @@
     
             <th contenteditable= "true" id = "comment-10">
             </th>
-        </tr>
-
-        <tr>
-            <th>ジョエル</th> 
-    
-            <th>
-                <select id="workSpace-11">
-                    <option>未選択</option>
-                </select>
-            </th> 
-    
-            <th>
-                <select id="workTime-11" disabled ></select><h4 id = text-11 ></h4>
-                
-            </th>
-    
-            <th contenteditable= "true" id = "comment-11">
-            </th>
-        </tr>
-        
-        
-        
-        
-
     </tr>
+
     
 </table>
 
