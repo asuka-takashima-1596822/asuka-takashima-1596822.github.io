@@ -1,4 +1,12 @@
 
+#nowTime{
+  background-color: cornsilk;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+
 table{
     border-collapse: separate;
     border-spacing: 10px; 
