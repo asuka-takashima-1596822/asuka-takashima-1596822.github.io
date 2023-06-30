@@ -1,4 +1,3 @@
-
 const date = new Date(); //現在時刻を取得
 const y = date.getFullYear(), //西暦年
       m = date.getMonth() + 1, //月　
@@ -9,6 +8,8 @@ const y = date.getFullYear(), //西暦年
 
 
 document.getElementById("nowTime").innerHTML = "🦕NOW TIME🦕 " + y + "/" + m + "/" + d + " " + H + ":" + M 
+
+
 
 //登録IDを配列にする
 const id = ["1","2","3","4","5","6","7","8","9","10"];
@@ -141,5 +142,6 @@ function intoNum (){
   }
 }
 intoNum();
+
 
 
